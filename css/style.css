@@ -10,18 +10,47 @@ body{
     position: relative;
 }
 
+.equilibrium{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+
+    background-image: url('../assets/image-equilibrium.jpg');
+    background-size: cover;
+}
+
 img{
     width: 300px;
     border-radius: 10px;
 }
 
-img:hover{
+.view{
+    display: none;
+}
 
+.equilibrium:hover .view{
+    display: block;
+    background-color:hsla(178, 100%, 50%, 0.4);
+    padding: 100px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
+    transform: translate(-50%, -50%);
+   
 }
 
 img:hover{
-    image: url('../assets/icon-view.svg');
+
+}
+
+.equilibrium:hover{
+    background-image: url('../assets/image-equilibrium.jpg');
+    background-image: url('../assets/icon-view.svg');
 }
 
 h1{
